@@ -1,20 +1,23 @@
 var students = [
     {
-        name: Girino,
-        surname: Giacorino,
+        name: "Girino",
+        surname: "Giacorino",
         age: 80,
-        description: {}
+        description:""
     },
     {
-        name: Givino,
-        surname: Giacovino,
+        name: "Givino",
+        surname: "Giacovino",
         age: 80,
-        description: {}
+        description:""
     },
     {
-        name: Gipino,
-        surname: Giacopino,
+        name: "Gipino",
+        surname: "Giacopino",
         age: 80,
-        description: {}
+        description:""
     }
 ]
+for (grs=0; grs < students.length; grs++) {
+    students.description += prompt("Descrivi lo studente")
+} console.log(students)
