@@ -18,6 +18,9 @@ var students = [
         description:""
     }
 ]
-for (var grs=0; grs < students.length; grs++) {
+for(var grs = 0; grs < students.length; grs++) {
     students[grs].description = prompt("Descrivi lo studente")
-} console.log(students.description)
+    for(var o in students[grs]) {
+        document.getElementById("list").innerHTML += " " + [o] + " " + students[grs][o] + "<br>" 
+    }
+}
